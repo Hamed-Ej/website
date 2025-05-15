@@ -1016,6 +1016,60 @@
       html {
         -webkit-text-size-adjust: 100%;
       }
+
+      /* Gahnameh Section Styles */
+      .gahnameh-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+        background: var(--main-white);
+        border-radius: 16px;
+        box-shadow: 0 4px 16px rgba(0, 188, 212, 0.08);
+      }
+
+      .gahnameh-description {
+        font-size: 1.1rem;
+        color: var(--main-text);
+        opacity: 0.9;
+        line-height: 1.7;
+        margin-bottom: 32px;
+      }
+
+      .download-button {
+        display: inline-block;
+        padding: 14px 32px;
+        background: var(--main-blue);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+        transition: all 0.3s;
+        gap: 8px;
+      }
+
+      .download-button:hover {
+        background: #00e5ff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 16px rgba(0, 188, 212, 0.2);
+      }
+
+      .download-button i {
+        margin-left: 8px;
+      }
+
+      @media (max-width: 768px) {
+        .gahnameh-description {
+          font-size: 1rem;
+        }
+        .download-button {
+          font-size: 1rem;
+          padding: 12px 28px;
+        }
+      }
     </style>
   </head>
   <body class="dark">
@@ -1041,6 +1095,7 @@
           <li><a href="#home" class="active">خانه</a></li>
           <li><a href="#skills">مهارت‌ها</a></li>
           <li><a href="#projects">پروژه‌ها</a></li>
+          <li><a href="#gahnameh">گاهنامه</a></li>
           <li><a href="#social">راه‌های ارتباطی</a></li>
           <li><a href="#contact">تماس</a></li>
         </ul>
@@ -1052,6 +1107,7 @@
           <li><a href="#home" class="active">خانه</a></li>
           <li><a href="#skills">مهارت‌ها</a></li>
           <li><a href="#projects">پروژه‌ها</a></li>
+          <li><a href="#gahnameh">گاهنامه</a></li>
           <li><a href="#social">راه‌های ارتباطی</a></li>
           <li><a href="#contact">تماس</a></li>
         </ul>
@@ -1161,6 +1217,22 @@
               </p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="gahnameh" class="section">
+        <h2 class="section-title">گاهنامه روپوش سفید</h2>
+        <div class="gahnameh-content" data-aos="fade-up">
+          <p class="gahnameh-description">
+            من همچنین افتخار سردبیری گاهنامه "روپوش سفید" را بر عهده دارم. این
+            گاهنامه به موضوعات مرتبط با سلامت، بهداشت و پزشکی می‌پردازد و تلاش
+            دارد تا آگاهی عمومی را در این زمینه‌ها افزایش دهد. ما با همکاری تیمی
+            از نویسندگان و کارشناسان، مطالب مفید و کاربردی را برای شما آماده
+            می‌کنیم.
+          </p>
+          <a href="گاهنامه روپوش سفید.pdf" download class="download-button">
+            <i class="fas fa-download"></i> دانلود آخرین شماره گاهنامه
+          </a>
         </div>
       </section>
 
